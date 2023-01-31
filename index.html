@@ -16,32 +16,44 @@
         <p class="header__user-meeting">Hi, User</p>
         <img src="./assets/user.png" alt="user" class="header__user-photo" />
       </section>
+      <section class="header__user-menu">
+        <ul class="header__user-list">
+          <li class="header__user-link">Profile</li>
+          <li class="header__user-link">Logout</li>
+        </ul>
+      </section>
     </header>
     <main class="content">
-      <aside class="sidebar">
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__link">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/25/25694.png"
-                class="navigation__icon"
-              />Home
-            </li>
-            <li class="navigation__link">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/2537/2537926.png"
-                class="navigation__icon"
-              />News
-            </li>
-            <li class="navigation__link">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/542/542689.png"
-                class="navigation__icon"
-              />Messages
-            </li>
-          </ul>
-        </nav>
-      </aside>
+      <div class="navigation__burger">
+        <input type="checkbox" />
+        <div class="navigation__burger-block"></div>
+        <div class="navigation__burger-block"></div>
+        <div class="navigation__burger-block"></div>
+        <aside class="sidebar">
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__link">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/25/25694.png"
+                  class="navigation__icon"
+                />Home
+              </li>
+              <li class="navigation__link">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/2537/2537926.png"
+                  class="navigation__icon"
+                />News
+              </li>
+              <li class="navigation__link">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/542/542689.png"
+                  class="navigation__icon"
+                />Messages
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
       <article class="posts">
         <section class="posts__post">
           <img src="./assets/user.png" class="user__photo" />
@@ -81,14 +93,17 @@
       </article>
       <aside class="tags">
         <section class="tags__block">
-          <h1 class="tags__label">Actual topics</h1>
-          <ul class="tags__list">
-            <li class="tags__link">First tag</li>
-            <li class="tags__link">Second tag</li>
-            <li class="tags__link">Third tag</li>
-            <li class="tags__link">Forth tag</li>
-            <li class="tags__link">Fifth tag</li>
-          </ul>
+          <div class="tab">
+            <input type="checkbox" id="chck1" />
+            <label class="tab-label" for="chck1">Actual topics</label>
+            <ul class="tab-content">
+              <li class="tags__link">First tag</li>
+              <li class="tags__link">Second tag</li>
+              <li class="tags__link">Third tag</li>
+              <li class="tags__link">Forth tag</li>
+              <li class="tags__link">Fifth tag</li>
+            </ul>
+          </div>
         </section>
       </aside>
     </main>
